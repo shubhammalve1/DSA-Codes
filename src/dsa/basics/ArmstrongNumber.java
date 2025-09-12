@@ -1,4 +1,4 @@
-package basics;
+package dsa.basics;
 
 /*
 371 = addition of cube of each digit is the number itself is called Armstrong Number

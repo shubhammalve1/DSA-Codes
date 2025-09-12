@@ -1,4 +1,4 @@
-package basics;
+package dsa.basics;
 
 import java.util.ArrayList;
 import java.util.Comparator;

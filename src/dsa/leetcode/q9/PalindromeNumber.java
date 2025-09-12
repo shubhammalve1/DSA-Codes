@@ -1,7 +1,5 @@
-package leetcode.q9;
+package dsa.leetcode.q9;
 
-
-import java.util.Arrays;
 
 public class PalindromeNumber {
     public static void main(String[] args){

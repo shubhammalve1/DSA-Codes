@@ -1,13 +1,12 @@
-package basics;
+package dsa.basics;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class GreatestCommonDivisor {
     public static void main(String[] args){
-        GCDWay2(11,13);
+        //GCDWay3(11,13);
+        GCDWay3(10,15);
     }
 
     public static int GCD(int n1, int n2){
@@ -36,7 +35,7 @@ public class GreatestCommonDivisor {
 
     public static void GCDWay2(int n1, int n2){
         int gcd = 1;
-        for(int i = 1; i*i<=Math.max(n1,n2); i++){
+        for(int i = 1; i*i<=Math.min(n1,n2); i++){
             if(n1 % i == 0 && n2 % i == 0){
                 gcd = i;
             }
@@ -44,4 +43,29 @@ public class GreatestCommonDivisor {
 
         System.out.println("GCD: " + gcd);
     }
+
+    public static void GCDWay3(int n1, int n2) {
+        int gcd = 1;
+        while(n1 > 0 && n2 > 0){
+
+            if(n1 > n2){
+                n1 = n1 % n2;
+
+            } else {
+                n2 = n2 % n1;
+            }
+        }
+
+        if(n1 == 0) {
+            gcd = n2;
+        } else {
+            gcd = n1;
+        }
+
+        System.out.println("GCD: " + gcd);
+
+    }
+
+
+
 }

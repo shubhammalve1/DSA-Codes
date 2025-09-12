@@ -1,4 +1,4 @@
-package basics;
+package dsa.basics;
 
 public class CountDigits {
     public static int countDigits(int number){

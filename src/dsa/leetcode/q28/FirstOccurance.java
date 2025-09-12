@@ -1,4 +1,4 @@
-package leetcode.q28;
+package dsa.leetcode.q28;
 /*
 Given two strings needle and haystack,
 return the index of the first occurrence

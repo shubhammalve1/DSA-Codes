@@ -1,4 +1,4 @@
-package dsaconcept.array;
+package dsa.array;
 
 import java.lang.Thread;
 

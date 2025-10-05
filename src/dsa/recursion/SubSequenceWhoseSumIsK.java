@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SubSequenceWhoseSumIsK {
+    static boolean flag = false;
     public static void main(String[] args){
         Integer[] arr = {1,2,3};
         List<Integer> subSequence = new ArrayList<>();
@@ -15,11 +16,15 @@ public class SubSequenceWhoseSumIsK {
     }
 
     public static void subSequenceSum(Integer[] arr, List<Integer> subSequence, int sum, int k, int idx){
+
         if(idx >= arr.length){
-            if(sum == k){
-                System.out.println(subSequence);
+            if((sum == k) && (flag == false)){
+                flag = true;
+                if(flag == true){
+                    System.out.println(subSequence);
+                }
             }
-            return;
+        return;
         }
 
         subSequence.add(arr[idx]);
